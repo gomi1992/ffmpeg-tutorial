@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxSubsegmentDuration="PT5.0S" mediaPresentationDuration="PT9M57S" minBufferTime="PT5.0S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd">
+  <Period duration="PT9M57S" id="P1">
+    <!-- Adaptation Set for subtitle -->
+    <AdaptationSet codecs="stpp" contentType="text" group="3" id="38" lang="en" mimeType="application/mp4" par="16:9" sar="1:1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="subtitle"/>
+      <Representation bandwidth="0" height="480" id="38_1" width="854">
+        <BaseURL>SNE_DASH_CASE4B_SD_subtitle_Track3.m4t</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <!-- Adaptation Set for subtitle -->
+    <AdaptationSet codecs="stpp" contentType="text" group="3" id="39" lang="en" mimeType="application/mp4" par="16:9" sar="1:1">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="subtitle"/>
+      <Representation bandwidth="0" height="480" id="39_1" width="854">
+        <BaseURL>SNE_DASH_CASE4B_SD_subtitle_Track4.m4t</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <!-- Adaptation Set for main audio -->
+    <AdaptationSet audioSamplingRate="48000" codecs="mp4a.40.5" contentType="audio" group="2" id="2" lang="en" mimeType="audio/mp4" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+      <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <Representation bandwidth="96000" id="2_1">
+        <BaseURL>SNE_DASH_CASE4B_SD_audio_Track1.m4a</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <!-- Adaptation Set for video -->
+    <AdaptationSet codecs="avc1.4D401E" contentType="video" frameRate="24" group="1" id="1" maxBandwidth="1609728" maxHeight="480" maxWidth="854" maximumSAPPeriod="5.0" mimeType="video/mp4" minBandwidth="1609728" minHeight="480" minWidth="854" par="16:9" sar="1:1" scanType="progressive" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <Representation bandwidth="1609728" height="480" id="1_1" mediaStreamStructureId="1" width="854">
+        <BaseURL>SNE_DASH_CASE4B_SD_video_Track2.m4v</BaseURL>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
